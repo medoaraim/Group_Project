@@ -32,6 +32,12 @@ public class Movie {
     public void setYear(Year year) {
         this.year = year;
     }
+    public String wright(Title title, Genre genre, Year year ) {
+    	this.title = title;
+    	this.genre = genre;
+    	this.year = year;
+    	return title + genre + year;
+    }
 
     @Override
     public String toString() {
@@ -41,8 +47,9 @@ public class Movie {
                 "and, a year = " + year;
     }
 }
-public class MovieTester {
+class MovieTester {
     public static void main(String[] args) {
-        Movie m1 = new Movie(new Title ("Nacho Libre"),new Genre("Comedy"), new Year(2006))
+        Movie m1 = new Movie(new Title ("Nacho Libre"),new Genre("Comedy"), new Year(2006));
+        m1.wright;
     }
 }
